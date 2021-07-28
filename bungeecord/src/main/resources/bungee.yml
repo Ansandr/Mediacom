@@ -1,0 +1,5 @@
+name: Mediacom
+version: 1.0.0
+main: me.ansandr.mediacom.platforms.bungeecord.BungeeMain
+author: Ansandr
+description: Add commands to send to player link on social media's

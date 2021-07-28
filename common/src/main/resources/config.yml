@@ -1,0 +1,27 @@
+media:
+  discord:
+    link: https://discord.com/invite/Yap846T
+    message:
+      - '{"text": "","extra":[{"text":"Нажмите, чтобы зайти на наш ","color":"green"},{"text":"Discord","bold":true,"color":"#5865F2"},{"text":" сервер!","color":"green"}],"clickEvent":{"action":"open_url","value":"{url}"},"hoverEvent":{"action":"show_text","contents":[{"text":"Нажмите чтобы перейти в ","color":"green"},{"text":"Discord","bold":true,"color":"#5865F2"},{"text":"!","color":"green"}]}}'
+  vk:
+    link: https://vk.com/serversocialcraft
+    message:
+      - '{"text": "","extra":[{"text":"Нажмите, чтобы перейти на нашу страницу ","color":"green"},{"text":"VK","bold":true,"color":"#2787F5"},{"text":"!","color":"green"}],"clickEvent":{"action":"open_url","value":"{url}"},"hoverEvent":{"action":"show_text","contents":[{"text":"Нажмите чтобы перейти в ","color":"green"},{"text":"VK","bold":true,"color":"#2787F5"},{"text":"!","color":"green"}]}}'
+  forum:
+    link: https://socialcraft.cf
+    message:
+      - '{"text": "","extra": [{"text":"Нажмите, чтобы перейти на наш ","color":"green"},{"text":"Форум","bold":true,"color":"aqua"},{"text":"!","color":"green"}],"clickEvent":{"action":"open_url","value":"{url}"},"hoverEvent":{"action":"show_text","contents":[{"text":"Нажми чтобы перейти на наш ","color":"green"},{"text":"Форум","bold":true,"color":"aqua"},{"text":"!","color":"green"}]}}'
+  youtube:
+    link: https://www.youtube.com/channel/UC7oFPF2zT_0dG9cgQMksViQ
+    message:
+      - '{"text": "","extra": [{"text":"Нажмите, чтобы проверить на наш ","color":"green"},{"text":"YouTube","bold":true,"color":"#FF0000"},{"text":"!","color":"green"}],"clickEvent":{"action":"open_url","value":"{url}"},"hoverEvent":{"action":"show_text","contents":[{"text":"Нажмите чтобы перейти в ","color":"green"},{"text":"YouTube","bold":true,"color":"#FF0000"},{"text":"!","color":"green"}]}}'
+  store:
+    aliases: [ donate ]
+    link: https://donate.socialcraft.cf
+    message:
+      - '{"text": "","extra": [{"text":"Нажмите, чтобы посетить наш ","color":"green"},{"text":"Магазин","bold":true,"color":"light_purple"},{"text":"!","color":"green"}],"clickEvent":{"action":"open_url","value":"{url}"},"hoverEvent":{"action":"show_text","contents":[{"text":"Нажмите чтобы посетить наш ","color":"green"},{"text":"Магазин","bold":true,"color":"light_purple"},{"text":"!","color":"green"}]}}'
+list:
+  - '{"text":"Посетите наши страницы в социальных сетях!"}'
+  - '[{"text":"Сайт: ","color":"yellow"},{"text":"socialcraft.cf","color":"aqua","clickEvent":{"action":"open_url","value":"https://socialcraft.cf"}}]'
+  - '[{"text":"VK: ","color":"yellow"},{"text":"vk.com/serversocialcraft","color":"aqua","clickEvent":{"action":"open_url","value":"https://vk.com/serversocialcraft"}}]'
+  - '[{"text":"Дискорд: ","color":"yellow"},{"text":"socialcraft.cf/discord","color":"aqua","clickEvent":{"action":"open_url","value":"https://socialcraft.cf/discord"}}]'
