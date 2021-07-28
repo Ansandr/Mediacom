@@ -25,7 +25,7 @@ public class SpigotMain extends JavaPlugin {
     public void onEnable() {
         getLogger().info("Detected server platform: Bukkit. " + Bukkit.getBukkitVersion().split("-")[0] +
                 " (" + Bukkit.getServer().getClass().getPackage().getName().split("\\.")[3] + ")");
-
+        mediaCommandMap = new HashMap<>();
         saveDefaultConfig();
         reload();
         RootCommand command = new RootCommand();
@@ -36,8 +36,8 @@ public class SpigotMain extends JavaPlugin {
     public int reload() {
         config = getConfig();
         reloadConfig();
-        mediaCommandMap = new HashMap<>();
         unregisterCommands();
+        mediaCommandMap = new HashMap<>();
         return registerCommands();
     }
 
@@ -65,9 +65,12 @@ public class SpigotMain extends JavaPlugin {
     }
 
     private void unregisterCommands() {
+        if (mediaCommandMap.isEmpty()) {
+            return;
+        }
         CommandMap map = getCommandMap();
         try {
-            Field field = map.getClass().getDeclaredField("knownCommands");
+            Field field = SimpleCommandMap.class.getDeclaredField("knownCommands");
             field.setAccessible(true);
             Map<String, Command> serverCommands = (Map<String, Command>) field.get(map);
             for (Command cmd : mediaCommandMap.values()) {
@@ -116,7 +119,7 @@ public class SpigotMain extends JavaPlugin {
                 }
             }
             if (args.length == 1) {
-                if (sender.hasPermission("mediacom.admin")) {
+                if (!sender.hasPermission("mediacom.admin")) {
                     sender.sendMessage(ChatColor.RED + "Influence permission");
                     return true;
                 }

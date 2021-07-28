@@ -42,8 +42,8 @@ public final class BungeeMain extends Plugin {
 
     public int reload() {
         config = getConfig();
-        mediaCommandMap = new HashMap<>();
         unregisterCommands();
+        mediaCommandMap = new HashMap<>();
         return registerCommands();
     }
 
